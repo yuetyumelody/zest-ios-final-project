@@ -14,6 +14,8 @@
 		A7FC12C224561048001274C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FC12C124561048001274C6 /* Assets.xcassets */; };
 		A7FC12C524561048001274C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FC12C324561048001274C6 /* LaunchScreen.storyboard */; };
 		A7FC12D024561049001274C6 /* zestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12CF24561049001274C6 /* zestTests.swift */; };
+		A7FC12DC245738E7001274C6 /* uploadOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12DB245738E7001274C6 /* uploadOneViewController.swift */; };
+		A7FC12DE2457434A001274C6 /* uploadTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		A7FC12CB24561049001274C6 /* zestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FC12CF24561049001274C6 /* zestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zestTests.swift; sourceTree = "<group>"; };
 		A7FC12D124561049001274C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FC12DB245738E7001274C6 /* uploadOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadOneViewController.swift; sourceTree = "<group>"; };
+		A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		A7FC12B724561045001274C6 /* zest */ = {
 			isa = PBXGroup;
 			children = (
+				A7FC12DA245738C4001274C6 /* uploadViews */,
 				A7FC12B824561045001274C6 /* AppDelegate.swift */,
 				A7FC12BA24561045001274C6 /* SceneDelegate.swift */,
 				A7FC12BC24561045001274C6 /* ViewController.swift */,
@@ -97,6 +102,15 @@
 				A7FC12D124561049001274C6 /* Info.plist */,
 			);
 			path = zestTests;
+			sourceTree = "<group>";
+		};
+		A7FC12DA245738C4001274C6 /* uploadViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7FC12DB245738E7001274C6 /* uploadOneViewController.swift */,
+				A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */,
+			);
+			path = uploadViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 			files = (
 				A7FC12BD24561045001274C6 /* ViewController.swift in Sources */,
 				A7FC12B924561045001274C6 /* AppDelegate.swift in Sources */,
+				A7FC12DC245738E7001274C6 /* uploadOneViewController.swift in Sources */,
+				A7FC12DE2457434A001274C6 /* uploadTwoViewController.swift in Sources */,
 				A7FC12BB24561045001274C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
