@@ -9,11 +9,18 @@
 import UIKit
 
 class uploadTwoViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var userInstructionsField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.userInstructionsField.layer.borderWidth = 2;
+        self.userInstructionsField.layer.borderColor = UIColor.orange.cgColor;
 
         // Do any additional setup after loading the view.
+        
     }
     
 
