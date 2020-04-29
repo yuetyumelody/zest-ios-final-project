@@ -10,6 +10,7 @@ import UIKit
 
 class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    
     //IBOutlets
     @IBOutlet weak var recipeName: UITextField!
     
@@ -47,6 +48,8 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         //load picker
         diffPicker.delegate = self;
