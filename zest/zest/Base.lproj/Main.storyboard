@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uu3-EV-QZb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KAO-OT-ile">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -359,7 +360,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Led-R1-cPU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="292"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="YiZ-D1-BrC"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="X4i-5g-Vgl"/>
@@ -368,7 +369,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RXr-pP-RWm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tsp-V6-Hmj"/>
+                    <navigationItem key="navigationItem" id="Tsp-V6-Hmj">
+                        <barButtonItem key="rightBarButtonItem" title="reviews" id="ufN-0a-EyG">
+                            <connections>
+                                <segue destination="UEW-e8-HgW" kind="show" id="chR-XZ-8gV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageScrollView" destination="Led-R1-cPU" id="8Q9-Th-CsK"/>
                     </connections>
@@ -377,20 +384,70 @@
             </objects>
             <point key="canvasLocation" x="2063.768115942029" y="1504.6875"/>
         </scene>
-        <!--Directions View Controller-->
+        <!--Reviews View Controller-->
         <scene sceneID="z0F-Ap-nS6">
             <objects>
-                <viewController id="UEW-e8-HgW" customClass="directionsViewController" customModule="zest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UEW-e8-HgW" customClass="reviewsViewController" customModule="zest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRm-hd-zAR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-qc-MWQ">
+                                <rect key="frame" x="0.0" y="438" width="414" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T9H-Yk-P0G">
+                                    <size key="itemSize" width="350" height="113"/>
+                                    <size key="estimatedItemSize" width="350" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bx6-ZT-7Wp" customClass="CollectionViewCell" customModule="zest" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="0.0" width="350" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LDj-NP-5fY">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review 1 content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-F0-CYe">
+                                                    <rect key="frame" x="8" y="8" width="332" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reviewer 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-33-Dze">
+                                                    <rect key="frame" x="158" y="59" width="172" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="350" height="100"/>
+                                        <connections>
+                                            <outlet property="reviewContent" destination="AfD-F0-CYe" id="7Xc-lb-etP"/>
+                                            <outlet property="reviewer" destination="KWZ-33-Dze" id="zXe-Zx-Xaq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="UEW-e8-HgW" id="Pe9-Cb-4fZ"/>
+                                    <outlet property="delegate" destination="UEW-e8-HgW" id="1wc-eg-liF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UZq-5A-Gcd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hX3-Wg-f5g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Faf-yP-P55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2959" y="1505"/>
+            <point key="canvasLocation" x="2957.971014492754" y="1504.6875"/>
         </scene>
         <!--Item-->
         <scene sceneID="lm2-Xd-jLs">
@@ -411,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="1093" y="1505"/>
         </scene>
-        <!--Reviews View Controller-->
+        <!--Directions View Controller-->
         <scene sceneID="CKM-RD-d1W">
             <objects>
-                <viewController id="422-8T-Kak" customClass="reviewsViewController" customModule="zest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="422-8T-Kak" customClass="directionsViewController" customModule="zest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPF-xZ-Aq1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

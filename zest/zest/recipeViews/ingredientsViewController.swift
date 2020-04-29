@@ -32,14 +32,16 @@ class ingredientsViewController: UIViewController {
             imageView.contentMode = .scaleAspectFit
             
             let xPos = Int(self.view.frame.width) * i
-            imageView.frame = CGRect(x: xPos, y: 0, width: Int(self.imageScrollView.frame.width), height: Int(self.imageScrollView.frame.height))
+            imageView.frame = CGRect(x: xPos, y: 10, width: Int(self.imageScrollView.frame.width), height: Int(self.imageScrollView.frame.height))
             imageScrollView.contentSize.width = imageScrollView.frame.width * CGFloat(i+1)
             imageScrollView.addSubview(imageView)
             
             //adding captions to scolls
             let caption = UITextView()
             caption.text = captionArray[i];
-            caption.frame = CGRect(x: xPos+50, y: 200, width: Int(self.imageScrollView.frame.width)-50, height: 92)
+            caption.textColor = UIColor(displayP3Red: 255, green: 255, blue: 255, alpha: 1)
+            caption.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.5)
+            caption.frame = CGRect(x: xPos, y: 200, width: Int(self.imageScrollView.frame.width), height: 50)
             imageScrollView.addSubview(caption)
 
             
