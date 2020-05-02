@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    //Firebase stuff
+    let db = Firestore.firestore()
+    var ref: DocumentReference? = nil
     
     //IBOutlets
     @IBOutlet weak var recipeName: UITextField!
-    
-    @IBOutlet weak var prepTimeHours: UITextField!
-    
+        
     @IBOutlet weak var prepTimeMinutes: UITextField!
     
     @IBOutlet weak var ingredientField: UITextField!
@@ -23,9 +25,10 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var addIngredientBtn: UIButton!
     
     @IBOutlet weak var difficultyField: UITextField!
+
     
     var diffPicker = UIPickerView();
-    
+    var selectedDifficulty = "";
     
     //picker selection
     let difficultyLevels = ["easy", "intermediate", "hard"]
@@ -42,9 +45,16 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         difficultyField.text = difficultyLevels[row];
+        self.selectedDifficulty = difficultyLevels[row]
         difficultyField.resignFirstResponder();
         
     }
+    
+// all the variables
+//    let recipeInput: String?
+//    let prepTime: integer_t?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +68,27 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
         difficultyField.inputView = diffPicker;
         difficultyField.textAlignment = .center;
         difficultyField.placeholder = "Select Difficulty";
-
+        
+        //db reference
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func saveRecipe(_ sender: Any) {
+        let inputRecipe = self.recipeName.text
+        let prepTime = self.prepTimeMinutes.text
+        
+        db.collection("recipes").addDocument(
+            data: ["recipeName" : inputRecipe,
+                   "difficulty" : self.selectedDifficulty,
+                   "prepTime": prepTime
+                   ])
+        
+    }
+    
     /*
     // MARK: - Navigation
 

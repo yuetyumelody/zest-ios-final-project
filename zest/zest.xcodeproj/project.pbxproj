@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7221898030150B788EE28A8C /* Pods_zest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4934F4634EA337B0E2223 /* Pods_zest.framework */; };
 		A7E9603F2459A0B600DAAE7F /* recipeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */; };
 		A7E960412459A10600DAAE7F /* recipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E960402459A10600DAAE7F /* recipeCardView.swift */; };
-		A7E960432459C73500DAAE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E960422459C73400DAAE7F /* GoogleService-Info.plist */; };
+		A7E96044245CB4E600DAAE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E960422459C73400DAAE7F /* GoogleService-Info.plist */; };
 		A7FC12B924561045001274C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12B824561045001274C6 /* AppDelegate.swift */; };
 		A7FC12BB24561045001274C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12BA24561045001274C6 /* SceneDelegate.swift */; };
 		A7FC12C024561045001274C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FC12BE24561045001274C6 /* Main.storyboard */; };
@@ -201,7 +201,6 @@
 				97C0FE7C13733A1074D56C6A /* Pods-zestTests.debug.xcconfig */,
 				F85682D3A52842E920339046 /* Pods-zestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -300,7 +299,7 @@
 			files = (
 				A7E9603F2459A0B600DAAE7F /* recipeCardView.xib in Resources */,
 				A7FC12C524561048001274C6 /* LaunchScreen.storyboard in Resources */,
-				A7E960432459C73500DAAE7F /* GoogleService-Info.plist in Resources */,
+				A7E96044245CB4E600DAAE7F /* GoogleService-Info.plist in Resources */,
 				A7FC12C224561048001274C6 /* Assets.xcassets in Resources */,
 				A7FC12C024561045001274C6 /* Main.storyboard in Resources */,
 			);
