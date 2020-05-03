@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
     //Firebase stuff
     let db = Firestore.firestore()
@@ -26,7 +26,8 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var caloriesField: UITextField!
     
-    
+    // ingredients collection view
+    @IBOutlet weak var ingredientCollection: UICollectionView!
     
     
     
@@ -72,6 +73,10 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
         difficultyField.textAlignment = .center;
         difficultyField.placeholder = "Select Difficulty";
         
+        //ingredient view
+        ingredientCollection.delegate = self
+        ingredientCollection.dataSource = self
+        
         //db reference
         
         // Do any additional setup after loading the view.
@@ -80,7 +85,7 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     //Add a category
     let availableCategories = ["vegan","vegetarian","kid-friendly","wheat/gluten friendly","dairy free"]
     var selectedCategories = [String]()
-    let categoryAlert  = UIAlertController(title: "invalid category", message: "please enter either vegan, vegetarian, kid-friendly, wheat/gluten friendly or dairy free", preferredStyle: UIAlertController.Style.alert)
+    let categoryAlert  = UIAlertController(title: "invalid category", message: " please enter either vegan, vegetarian, kid-friendly, wheat/gluten friendly or dairy free", preferredStyle: UIAlertController.Style.alert)
     let alertAction = UIAlertAction(title: "got it!", style: .cancel  , handler: nil)
     
     
@@ -106,13 +111,6 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
         
     }
-    
-    //Add ingredients
-    var ingreArray = ["Apples"]
-    
-    
-    
-    
     
     
     
@@ -144,6 +142,28 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     @IBAction func validateSubmission(_ sender: UIBarButtonItem) {
         print("next button pressed")
+    }
+    
+    // ingredient collection view stuff
+    //Add ingredients
+    var ingreArray = [String]()
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return ingreArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ingredientCell", for: indexPath) as! ingredientCollectionViewCell
+        
+        cell.ingredientName.text = ingreArray[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    @IBAction func addIngredient(_ sender: Any) {
+        ingreArray.append(ingredientField.text!)
+        ingredientCollection.reloadData()
+        ingredientField.text = ""
     }
     
     /*

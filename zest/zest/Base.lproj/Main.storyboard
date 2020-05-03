@@ -131,27 +131,48 @@
                                 <rect key="frame" x="320" y="463" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addIngredient:" destination="5nK-A8-4Wa" eventType="touchUpInside" id="KPU-lS-MYJ"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PNq-Na-nHa">
-                                <rect key="frame" x="39" y="514" width="341" height="206"/>
+                                <rect key="frame" x="37" y="519" width="341" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KmM-vx-gi5">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KmM-vx-gi5">
+                                    <size key="itemSize" width="312" height="39"/>
+                                    <size key="estimatedItemSize" width="312" height="39"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Y4H-Rx-nXZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ingredientCell" id="Y4H-Rx-nXZ" customClass="ingredientCollectionViewCell" customModule="zest" customModuleProvider="target">
+                                        <rect key="frame" x="14.5" y="0.0" width="312" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GmX-ZP-dzc">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3ao-rw-y10">
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ingredient name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-Y4-nfg">
+                                                    <rect key="frame" x="0.0" y="8" width="304" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.51372549020000002" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="312" height="39"/>
+                                        <connections>
+                                            <outlet property="ingredientName" destination="sDm-Y4-nfg" id="tQn-Dr-LbK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="5nK-A8-4Wa" id="L1z-WZ-Z6A"/>
+                                    <outlet property="delegate" destination="5nK-A8-4Wa" id="yUS-3I-Hui"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.51372549019607838" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,6 +191,8 @@
                         <outlet property="caloriesField" destination="LlC-fC-GLI" id="KNG-ez-jBw"/>
                         <outlet property="categoryField" destination="LhZ-mw-PeD" id="Ac8-ww-zXK"/>
                         <outlet property="difficultyField" destination="pn1-b7-yVc" id="8Zc-aI-NfN"/>
+                        <outlet property="ingredientCollection" destination="PNq-Na-nHa" id="VH0-dX-yRG"/>
+                        <outlet property="ingredientField" destination="fMt-XW-jVK" id="3ZO-Qo-tcu"/>
                         <outlet property="prepTimeMinutes" destination="KV4-q7-xih" id="sjP-Fk-s91"/>
                         <outlet property="recipeName" destination="1sH-io-hQK" id="rCd-K2-HmT"/>
                     </connections>

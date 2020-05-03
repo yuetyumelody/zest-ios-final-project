@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7221898030150B788EE28A8C /* Pods_zest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4934F4634EA337B0E2223 /* Pods_zest.framework */; };
+		A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */; };
 		A7E9603F2459A0B600DAAE7F /* recipeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */; };
 		A7E960412459A10600DAAE7F /* recipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E960402459A10600DAAE7F /* recipeCardView.swift */; };
 		A7E96044245CB4E600DAAE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E960422459C73400DAAE7F /* GoogleService-Info.plist */; };
@@ -47,6 +48,7 @@
 		38ADDA6D0748D0EDAE91F940 /* Pods-zest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.release.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.release.xcconfig"; sourceTree = "<group>"; };
 		659603FFF01D1C2F2FE1E212 /* Pods-zest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.debug.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.debug.xcconfig"; sourceTree = "<group>"; };
 		97C0FE7C13733A1074D56C6A /* Pods-zestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zestTests.debug.xcconfig"; path = "Target Support Files/Pods-zestTests/Pods-zestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = recipeCardView.xib; sourceTree = "<group>"; };
 		A7E960402459A10600DAAE7F /* recipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeCardView.swift; sourceTree = "<group>"; };
 		A7E960422459C73400DAAE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				A7FC12DB245738E7001274C6 /* uploadOneViewController.swift */,
 				A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */,
 				A7FC12F3245756F0001274C6 /* uploadThreeViewController.swift */,
+				A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */,
 			);
 			path = uploadViews;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7FC12EC24574A3D001274C6 /* reviewsViewController.swift in Sources */,
+				A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */,
 				A7FC12E8245749F8001274C6 /* ingredientsViewController.swift in Sources */,
 				A7FC12F02457539E001274C6 /* savedRecipesViewController.swift in Sources */,
 				A7FC12E624574733001274C6 /* userSettingViewController.swift in Sources */,
