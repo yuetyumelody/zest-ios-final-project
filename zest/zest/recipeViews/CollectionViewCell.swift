@@ -9,6 +9,7 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var reviewContent: UILabel!
+    
+    @IBOutlet weak var reviewText: UITextView!
     @IBOutlet weak var reviewer: UILabel!
 }

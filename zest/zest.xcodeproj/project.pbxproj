@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7221898030150B788EE28A8C /* Pods_zest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4934F4634EA337B0E2223 /* Pods_zest.framework */; };
+		A767749B245F243A00B0A77F /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767749A245F243A00B0A77F /* pageViewController.swift */; };
 		A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */; };
-		A7E9603F2459A0B600DAAE7F /* recipeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */; };
-		A7E960412459A10600DAAE7F /* recipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E960402459A10600DAAE7F /* recipeCardView.swift */; };
+		A7938EF4245EED8400E5DF1D /* ingredientsV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */; };
+		A7938EF6245EEFB400E5DF1D /* recipeConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */; };
 		A7E96044245CB4E600DAAE7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E960422459C73400DAAE7F /* GoogleService-Info.plist */; };
 		A7FC12B924561045001274C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12B824561045001274C6 /* AppDelegate.swift */; };
 		A7FC12BB24561045001274C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12BA24561045001274C6 /* SceneDelegate.swift */; };
@@ -22,7 +23,6 @@
 		A7FC12DE2457434A001274C6 /* uploadTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */; };
 		A7FC12E424574720001274C6 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12E324574720001274C6 /* profileViewController.swift */; };
 		A7FC12E624574733001274C6 /* userSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12E524574733001274C6 /* userSettingViewController.swift */; };
-		A7FC12E8245749F8001274C6 /* ingredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12E7245749F8001274C6 /* ingredientsViewController.swift */; };
 		A7FC12EA24574A1B001274C6 /* directionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12E924574A1B001274C6 /* directionsViewController.swift */; };
 		A7FC12EC24574A3D001274C6 /* reviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12EB24574A3D001274C6 /* reviewsViewController.swift */; };
 		A7FC12EE24575382001274C6 /* recommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC12ED24575382001274C6 /* recommendedViewController.swift */; };
@@ -48,9 +48,10 @@
 		38ADDA6D0748D0EDAE91F940 /* Pods-zest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.release.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.release.xcconfig"; sourceTree = "<group>"; };
 		659603FFF01D1C2F2FE1E212 /* Pods-zest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.debug.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.debug.xcconfig"; sourceTree = "<group>"; };
 		97C0FE7C13733A1074D56C6A /* Pods-zestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zestTests.debug.xcconfig"; path = "Target Support Files/Pods-zestTests/Pods-zestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A767749A245F243A00B0A77F /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientCollectionViewCell.swift; sourceTree = "<group>"; };
-		A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = recipeCardView.xib; sourceTree = "<group>"; };
-		A7E960402459A10600DAAE7F /* recipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeCardView.swift; sourceTree = "<group>"; };
+		A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsV2ViewController.swift; sourceTree = "<group>"; };
+		A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeConstantViewController.swift; sourceTree = "<group>"; };
 		A7E960422459C73400DAAE7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7FC12B524561045001274C6 /* zest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FC12B824561045001274C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		A7FC12DD2457434A001274C6 /* uploadTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadTwoViewController.swift; sourceTree = "<group>"; };
 		A7FC12E324574720001274C6 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		A7FC12E524574733001274C6 /* userSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettingViewController.swift; sourceTree = "<group>"; };
-		A7FC12E7245749F8001274C6 /* ingredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsViewController.swift; sourceTree = "<group>"; };
 		A7FC12E924574A1B001274C6 /* directionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = directionsViewController.swift; sourceTree = "<group>"; };
 		A7FC12EB24574A3D001274C6 /* reviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewsViewController.swift; sourceTree = "<group>"; };
 		A7FC12ED24575382001274C6 /* recommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recommendedViewController.swift; sourceTree = "<group>"; };
@@ -186,12 +186,12 @@
 		A7FC12E224574673001274C6 /* recipeViews */ = {
 			isa = PBXGroup;
 			children = (
-				A7FC12E7245749F8001274C6 /* ingredientsViewController.swift */,
 				A7FC12E924574A1B001274C6 /* directionsViewController.swift */,
 				A7FC12EB24574A3D001274C6 /* reviewsViewController.swift */,
 				A7FC132524598EF8001274C6 /* CollectionViewCell.swift */,
-				A7E9603E2459A0B600DAAE7F /* recipeCardView.xib */,
-				A7E960402459A10600DAAE7F /* recipeCardView.swift */,
+				A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */,
+				A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */,
+				A767749A245F243A00B0A77F /* pageViewController.swift */,
 			);
 			path = recipeViews;
 			sourceTree = "<group>";
@@ -300,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E9603F2459A0B600DAAE7F /* recipeCardView.xib in Resources */,
 				A7FC12C524561048001274C6 /* LaunchScreen.storyboard in Resources */,
 				A7E96044245CB4E600DAAE7F /* GoogleService-Info.plist in Resources */,
 				A7FC12C224561048001274C6 /* Assets.xcassets in Resources */,
@@ -386,9 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7938EF6245EEFB400E5DF1D /* recipeConstantViewController.swift in Sources */,
 				A7FC12EC24574A3D001274C6 /* reviewsViewController.swift in Sources */,
 				A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */,
-				A7FC12E8245749F8001274C6 /* ingredientsViewController.swift in Sources */,
+				A767749B245F243A00B0A77F /* pageViewController.swift in Sources */,
 				A7FC12F02457539E001274C6 /* savedRecipesViewController.swift in Sources */,
 				A7FC12E624574733001274C6 /* userSettingViewController.swift in Sources */,
 				A7FC132624598EF8001274C6 /* CollectionViewCell.swift in Sources */,
@@ -396,9 +396,9 @@
 				A7FC12DC245738E7001274C6 /* uploadOneViewController.swift in Sources */,
 				A7FC12EA24574A1B001274C6 /* directionsViewController.swift in Sources */,
 				A7FC12F4245756F0001274C6 /* uploadThreeViewController.swift in Sources */,
+				A7938EF4245EED8400E5DF1D /* ingredientsV2ViewController.swift in Sources */,
 				A7FC12F2245753AE001274C6 /* tryAgainRecipesViewController.swift in Sources */,
 				A7FC12EE24575382001274C6 /* recommendedViewController.swift in Sources */,
-				A7E960412459A10600DAAE7F /* recipeCardView.swift in Sources */,
 				A7FC12DE2457434A001274C6 /* uploadTwoViewController.swift in Sources */,
 				A7FC12E424574720001274C6 /* profileViewController.swift in Sources */,
 				A7FC12BB24561045001274C6 /* SceneDelegate.swift in Sources */,

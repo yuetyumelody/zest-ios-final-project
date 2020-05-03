@@ -35,7 +35,7 @@ class reviewsViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         //edit items inside the cell
         
-        cell.reviewContent.text = reviewsArray[indexPath.row]
+        cell.reviewText.text = reviewsArray[indexPath.row]
         cell.reviewer.text = reviewerArray[indexPath.row]
         //This creates the shadows and modifies the cards a little bit
         cell.contentView.layer.cornerRadius = 4.0
