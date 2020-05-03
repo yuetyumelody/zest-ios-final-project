@@ -15,17 +15,20 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
     let db = Firestore.firestore()
     var ref: DocumentReference? = nil
     
+    let recipeIdentifier =  UUID().uuidString;
+    
     //IBOutlets
     @IBOutlet weak var recipeName: UITextField!
-        
     @IBOutlet weak var prepTimeMinutes: UITextField!
-    
     @IBOutlet weak var ingredientField: UITextField!
-    
     @IBOutlet weak var addIngredientBtn: UIButton!
-    
     @IBOutlet weak var difficultyField: UITextField!
-
+    @IBOutlet weak var categoryField: UITextField!
+    @IBOutlet weak var caloriesField: UITextField!
+    
+    
+    
+    
     
     var diffPicker = UIPickerView();
     var selectedDifficulty = "";
@@ -71,22 +74,76 @@ class uploadOneViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         //db reference
         
-        
-        
-        
         // Do any additional setup after loading the view.
     }
+    
+    //Add a category
+    let availableCategories = ["vegan","vegetarian","kid-friendly","wheat/gluten friendly","dairy free"]
+    var selectedCategories = [String]()
+    let categoryAlert  = UIAlertController(title: "invalid category", message: "please enter either vegan, vegetarian, kid-friendly, wheat/gluten friendly or dairy free", preferredStyle: UIAlertController.Style.alert)
+    let alertAction = UIAlertAction(title: "got it!", style: .cancel  , handler: nil)
+    
+    
+    @IBAction func categoryAdded(_ sender: Any) {
+        guard let inputCategory = self.categoryField.text else { return  }
+        
+        if availableCategories.contains(inputCategory) && !selectedCategories.contains(inputCategory) {
+            selectedCategories.append(inputCategory)
+            
+            let successAddedAlert = UIAlertController(title: "successfully added", message: inputCategory, preferredStyle: .alert)
+            let successAction = UIAlertAction(title: "okay", style: .cancel, handler: nil)
+            successAddedAlert.addAction(successAction)
+            self.present(successAddedAlert, animated: true, completion: nil)
+            
+            
+        } else {
+            let categoryAlert  = UIAlertController(title: "invalid category", message: "please enter either vegan, vegetarian, kid-friendly, wheat/gluten friendly or dairy free", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "got it!", style: .cancel  , handler: nil)
+            categoryAlert.addAction(alertAction)
+            self.present(categoryAlert, animated: true, completion: nil)
+            
+            
+        }
+        
+    }
+    
+    //Add ingredients
+    var ingreArray = ["Apples"]
+    
+    
+    
+    
+    
+    
     
     @IBAction func saveRecipe(_ sender: Any) {
         let inputRecipe = self.recipeName.text
         let prepTime = self.prepTimeMinutes.text
+//        let calories = self.caloriesField.text
         
-        db.collection("recipes").addDocument(
-            data: ["recipeName" : inputRecipe,
-                   "difficulty" : self.selectedDifficulty,
-                   "prepTime": prepTime
-                   ])
         
+        if ( self.recipeName.text?.isEmpty ?? true  || self.prepTimeMinutes.text?.isEmpty ?? true || self.ingreArray.count == 0){
+            
+            let missingItemAlert = UIAlertController(title: "Missing Fields", message: "missing recipe name, prep time or ingredients", preferredStyle: .alert)
+            let dismissAction = UIAlertAction(title: "okay", style: .cancel, handler: nil)
+            missingItemAlert.addAction(dismissAction)
+            self.present(missingItemAlert, animated: true, completion: nil)
+            
+        }
+        else {
+        db.collection("recipes").document(recipeIdentifier).setData([
+            "recipeName" : inputRecipe ?? "Unknown Recipe Name",
+            "difficulty" : self.selectedDifficulty,
+            "prepTime" : prepTime ?? "NA",
+            
+        ])
+            
+        }
+        
+    }
+    
+    @IBAction func validateSubmission(_ sender: UIBarButtonItem) {
+        print("next button pressed")
     }
     
     /*
