@@ -10,6 +10,14 @@ import UIKit
 
 class profileViewController: UIViewController {
 
+    // following status changes
+    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var followStatus: UILabel!
+    
+    
+    // ======================================
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

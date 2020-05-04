@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7221898030150B788EE28A8C /* Pods_zest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4934F4634EA337B0E2223 /* Pods_zest.framework */; };
 		A767749B245F243A00B0A77F /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767749A245F243A00B0A77F /* pageViewController.swift */; };
+		A767749D245F6B4500B0A77F /* triedSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767749C245F6B4500B0A77F /* triedSubViewController.swift */; };
 		A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */; };
 		A7938EF4245EED8400E5DF1D /* ingredientsV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */; };
 		A7938EF6245EEFB400E5DF1D /* recipeConstantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */; };
@@ -49,6 +50,7 @@
 		659603FFF01D1C2F2FE1E212 /* Pods-zest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.debug.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.debug.xcconfig"; sourceTree = "<group>"; };
 		97C0FE7C13733A1074D56C6A /* Pods-zestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zestTests.debug.xcconfig"; path = "Target Support Files/Pods-zestTests/Pods-zestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A767749A245F243A00B0A77F /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
+		A767749C245F6B4500B0A77F /* triedSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triedSubViewController.swift; sourceTree = "<group>"; };
 		A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsV2ViewController.swift; sourceTree = "<group>"; };
 		A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeConstantViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				A7FC12E324574720001274C6 /* profileViewController.swift */,
 				A7FC12E524574733001274C6 /* userSettingViewController.swift */,
+				A767749C245F6B4500B0A77F /* triedSubViewController.swift */,
 			);
 			path = profileViews;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A767749D245F6B4500B0A77F /* triedSubViewController.swift in Sources */,
 				A7938EF6245EEFB400E5DF1D /* recipeConstantViewController.swift in Sources */,
 				A7FC12EC24574A3D001274C6 /* reviewsViewController.swift in Sources */,
 				A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */,
