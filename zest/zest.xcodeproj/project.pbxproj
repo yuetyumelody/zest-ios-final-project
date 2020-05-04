@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7221898030150B788EE28A8C /* Pods_zest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4934F4634EA337B0E2223 /* Pods_zest.framework */; };
+		A73BC667246055DA0031D567 /* signOrLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC664246055DA0031D567 /* signOrLogView.swift */; };
+		A73BC668246055DB0031D567 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC663246055DA0031D567 /* loginView.swift */; };
+		A73BC669246055DB0031D567 /* signUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC666246055DA0031D567 /* signUpView.swift */; };
+		A73BC66A246055DB0031D567 /* dummyHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC665246055DA0031D567 /* dummyHomePage.swift */; };
+		A73BC66E246056530031D567 /* ConstantsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC66C246056510031D567 /* ConstantsFile.swift */; };
+		A73BC66F246056530031D567 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC66D246056530031D567 /* Utilities.swift */; };
+		A73BC67724606DDD0031D567 /* ingrePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC67624606DDD0031D567 /* ingrePopUpViewController.swift */; };
+		A73BC67924606E2F0031D567 /* ingreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC67824606E2F0031D567 /* ingreCollectionViewCell.swift */; };
+		A73BC6902460B5ED0031D567 /* triedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC68F2460B5ED0031D567 /* triedViewCell.swift */; };
+		A73BC6932460B8BE0031D567 /* uploadsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC6922460B8BE0031D567 /* uploadsViewCell.swift */; };
+		A73BC6952460B8DE0031D567 /* uploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BC6942460B8DE0031D567 /* uploadsViewController.swift */; };
 		A767749B245F243A00B0A77F /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767749A245F243A00B0A77F /* pageViewController.swift */; };
 		A767749D245F6B4500B0A77F /* triedSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767749C245F6B4500B0A77F /* triedSubViewController.swift */; };
 		A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */; };
@@ -49,6 +60,17 @@
 		38ADDA6D0748D0EDAE91F940 /* Pods-zest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.release.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.release.xcconfig"; sourceTree = "<group>"; };
 		659603FFF01D1C2F2FE1E212 /* Pods-zest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zest.debug.xcconfig"; path = "Target Support Files/Pods-zest/Pods-zest.debug.xcconfig"; sourceTree = "<group>"; };
 		97C0FE7C13733A1074D56C6A /* Pods-zestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zestTests.debug.xcconfig"; path = "Target Support Files/Pods-zestTests/Pods-zestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A73BC663246055DA0031D567 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginView.swift; path = "/Users/melody/Desktop/zest-ios-final-project/zest/zest/profileViews/loginView.swift"; sourceTree = "<absolute>"; };
+		A73BC664246055DA0031D567 /* signOrLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = signOrLogView.swift; path = "/Users/melody/Desktop/zest-ios-final-project/zest/zest/profileViews/signOrLogView.swift"; sourceTree = "<absolute>"; };
+		A73BC665246055DA0031D567 /* dummyHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dummyHomePage.swift; path = "/Users/melody/Desktop/zest-ios-final-project/zest/zest/profileViews/dummyHomePage.swift"; sourceTree = "<absolute>"; };
+		A73BC666246055DA0031D567 /* signUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = signUpView.swift; path = "/Users/melody/Desktop/zest-ios-final-project/zest/zest/profileViews/signUpView.swift"; sourceTree = "<absolute>"; };
+		A73BC66C246056510031D567 /* ConstantsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsFile.swift; sourceTree = "<group>"; };
+		A73BC66D246056530031D567 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A73BC67624606DDD0031D567 /* ingrePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingrePopUpViewController.swift; sourceTree = "<group>"; };
+		A73BC67824606E2F0031D567 /* ingreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingreCollectionViewCell.swift; sourceTree = "<group>"; };
+		A73BC68F2460B5ED0031D567 /* triedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triedViewCell.swift; sourceTree = "<group>"; };
+		A73BC6922460B8BE0031D567 /* uploadsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadsViewCell.swift; sourceTree = "<group>"; };
+		A73BC6942460B8DE0031D567 /* uploadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadsViewController.swift; sourceTree = "<group>"; };
 		A767749A245F243A00B0A77F /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		A767749C245F6B4500B0A77F /* triedSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triedSubViewController.swift; sourceTree = "<group>"; };
 		A7938EF1245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -100,6 +122,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A73BC66B246056190031D567 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A73BC66C246056510031D567 /* ConstantsFile.swift */,
+				A73BC66D246056530031D567 /* Utilities.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		A73BC6912460B8960031D567 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				A73BC68F2460B5ED0031D567 /* triedViewCell.swift */,
+				A73BC6922460B8BE0031D567 /* uploadsViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		A7FC12AC24561045001274C6 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +163,7 @@
 		A7FC12B724561045001274C6 /* zest */ = {
 			isa = PBXGroup;
 			children = (
+				A73BC66B246056190031D567 /* helpers */,
 				A7FC12E224574673001274C6 /* recipeViews */,
 				A7FC12E124574662001274C6 /* feedViews */,
 				A7FC12E024574640001274C6 /* profileViews */,
@@ -162,6 +203,10 @@
 		A7FC12DF2457461A001274C6 /* signInViews */ = {
 			isa = PBXGroup;
 			children = (
+				A73BC663246055DA0031D567 /* loginView.swift */,
+				A73BC665246055DA0031D567 /* dummyHomePage.swift */,
+				A73BC664246055DA0031D567 /* signOrLogView.swift */,
+				A73BC666246055DA0031D567 /* signUpView.swift */,
 			);
 			path = signInViews;
 			sourceTree = "<group>";
@@ -169,9 +214,11 @@
 		A7FC12E024574640001274C6 /* profileViews */ = {
 			isa = PBXGroup;
 			children = (
+				A73BC6912460B8960031D567 /* cells */,
 				A7FC12E324574720001274C6 /* profileViewController.swift */,
 				A7FC12E524574733001274C6 /* userSettingViewController.swift */,
 				A767749C245F6B4500B0A77F /* triedSubViewController.swift */,
+				A73BC6942460B8DE0031D567 /* uploadsViewController.swift */,
 			);
 			path = profileViews;
 			sourceTree = "<group>";
@@ -195,6 +242,8 @@
 				A7938EF3245EED8400E5DF1D /* ingredientsV2ViewController.swift */,
 				A7938EF5245EEFB400E5DF1D /* recipeConstantViewController.swift */,
 				A767749A245F243A00B0A77F /* pageViewController.swift */,
+				A73BC67624606DDD0031D567 /* ingrePopUpViewController.swift */,
+				A73BC67824606E2F0031D567 /* ingreCollectionViewCell.swift */,
 			);
 			path = recipeViews;
 			sourceTree = "<group>";
@@ -388,18 +437,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73BC667246055DA0031D567 /* signOrLogView.swift in Sources */,
+				A73BC67924606E2F0031D567 /* ingreCollectionViewCell.swift in Sources */,
 				A767749D245F6B4500B0A77F /* triedSubViewController.swift in Sources */,
+				A73BC668246055DB0031D567 /* loginView.swift in Sources */,
 				A7938EF6245EEFB400E5DF1D /* recipeConstantViewController.swift in Sources */,
 				A7FC12EC24574A3D001274C6 /* reviewsViewController.swift in Sources */,
+				A73BC67724606DDD0031D567 /* ingrePopUpViewController.swift in Sources */,
+				A73BC6932460B8BE0031D567 /* uploadsViewCell.swift in Sources */,
+				A73BC66E246056530031D567 /* ConstantsFile.swift in Sources */,
+				A73BC66F246056530031D567 /* Utilities.swift in Sources */,
 				A7938EF2245E5C0B00E5DF1D /* ingredientCollectionViewCell.swift in Sources */,
 				A767749B245F243A00B0A77F /* pageViewController.swift in Sources */,
 				A7FC12F02457539E001274C6 /* savedRecipesViewController.swift in Sources */,
+				A73BC6952460B8DE0031D567 /* uploadsViewController.swift in Sources */,
 				A7FC12E624574733001274C6 /* userSettingViewController.swift in Sources */,
 				A7FC132624598EF8001274C6 /* CollectionViewCell.swift in Sources */,
+				A73BC66A246055DB0031D567 /* dummyHomePage.swift in Sources */,
 				A7FC12B924561045001274C6 /* AppDelegate.swift in Sources */,
 				A7FC12DC245738E7001274C6 /* uploadOneViewController.swift in Sources */,
+				A73BC6902460B5ED0031D567 /* triedViewCell.swift in Sources */,
 				A7FC12EA24574A1B001274C6 /* directionsViewController.swift in Sources */,
 				A7FC12F4245756F0001274C6 /* uploadThreeViewController.swift in Sources */,
+				A73BC669246055DB0031D567 /* signUpView.swift in Sources */,
 				A7938EF4245EED8400E5DF1D /* ingredientsV2ViewController.swift in Sources */,
 				A7FC12F2245753AE001274C6 /* tryAgainRecipesViewController.swift in Sources */,
 				A7FC12EE24575382001274C6 /* recommendedViewController.swift in Sources */,

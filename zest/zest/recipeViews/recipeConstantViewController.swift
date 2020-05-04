@@ -13,14 +13,14 @@ class recipeConstantViewController: UIViewController {
     @IBOutlet weak var instructionScroll: UIScrollView!
     var photoArray = [UIImage]();
     var textViewArray = [UITextView]()
-    var captionArray = ["caption 1", "caption 2", "caption 3", "caption 4"]
+    var captionArray = ["separate the flour", "knead the dough with machine", "portion the doughs in 4", "add toppings you like", "bake at 300 F and thats it!"]
     var textViewHeight = 92;
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //instantiate images
-        photoArray = [#imageLiteral(resourceName: "FullSizeRender 7"), #imageLiteral(resourceName: "FullSizeRender 3"), #imageLiteral(resourceName: "FullSizeRender 10"), #imageLiteral(resourceName: "FullSizeRender 7")]
+        photoArray = [#imageLiteral(resourceName: "pizza1"), #imageLiteral(resourceName: "pizza2"), #imageLiteral(resourceName: "pizza3"), #imageLiteral(resourceName: "pizza4"), #imageLiteral(resourceName: "pizza 5")]
         
         //scrolling photos
         for i in 0 ..< photoArray.count{

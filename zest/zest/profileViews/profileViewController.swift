@@ -14,9 +14,12 @@ class profileViewController: UIViewController {
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var followStatus: UILabel!
     
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     // ======================================
 
+    @IBOutlet weak var greenView: UIView!
+    @IBOutlet weak var blueView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +27,18 @@ class profileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            blueView.alpha = 1
+            greenView.alpha = 0
+        }
+        else{
+            blueView.alpha = 0
+            greenView.alpha = 1
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

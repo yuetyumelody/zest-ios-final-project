@@ -8,34 +8,22 @@
 
 import UIKit
 
-class triedCell: UICollectionViewCell{
-    
-    @IBOutlet weak var triedImage: UIImageView!
-    @IBOutlet weak var triedInfoBox: UIView!
-    
-}
 
 class triedSubViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
-    @IBOutlet weak var triedCollection: UICollectionView!
-    
-    
-    
-    
     //array of images
-    var triedRecipesImages = [UIImage(named: "FullSizeRender 3 2"), UIImage(named: "FullSizeRender 3"),UIImage(named: "FullSizeRender 6"), UIImage(named: "FullSizeRender 7")]
+    var triedRecipesImages = [UIImage(named: "pizza 5"), UIImage(named: "FullSizeRender 3"),UIImage(named: "FullSizeRender 6"), UIImage(named: "FullSizeRender 7")]
     
-    
-    
-    
-    
+
+    //COLLECTIONVIEW PROTOCOL STUBS
+    @IBOutlet weak var triedCollection: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return triedRecipesImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "triedCell", for: indexPath) as! triedCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "triedViewCell", for: indexPath) as! triedViewCell
         //the bunch of things to do
         cell.triedImage.image = triedRecipesImages[indexPath.row]
         
@@ -43,22 +31,32 @@ class triedSubViewController: UIViewController, UICollectionViewDataSource, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.transitionToRecipe()
+    }
+    //======================================
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        triedCollection.delegate = self
+        triedCollection.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //present recipe Detail View
+    func transitionToRecipe(){
+        
+        let recipeViewController = storyboard?.instantiateViewController(identifier: "ingredientVC") as? ingredientsV2ViewController
+        
+        view.window?.rootViewController = recipeViewController
+        view.window?.makeKeyAndVisible()
+        
     }
-    */
+    //=============================
+
 
 }
