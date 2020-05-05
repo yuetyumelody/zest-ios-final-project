@@ -21,6 +21,9 @@ class profileViewController: UIViewController {
     @IBOutlet weak var greenView: UIView!
     @IBOutlet weak var blueView: UIView!
     
+    @IBOutlet weak var likedRecipView: UIView!
+    
+    //=====================================
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,14 +32,30 @@ class profileViewController: UIViewController {
     
     
     @IBAction func switchViews(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0{
+        
+        var switchCase = sender.selectedSegmentIndex
+        
+        switch switchCase {
+            
+        case 0:
             blueView.alpha = 1
             greenView.alpha = 0
-        }
-        else{
+            likedRecipView.alpha = 0
+        case 1:
             blueView.alpha = 0
             greenView.alpha = 1
+            likedRecipView.alpha = 0
+            
+        case 2:
+            blueView.alpha = 0
+            greenView.alpha = 0
+            likedRecipView.alpha = 1
+        
+        default:
+            print("Error in segment Contro")
+            
         }
+       
     }
     
     /*

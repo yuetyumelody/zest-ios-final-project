@@ -399,16 +399,24 @@
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V1S-XD-SJJ">
-                                <rect key="frame" x="90" y="272" width="235" height="32"/>
+                                <rect key="frame" x="31" y="272" width="353" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="tried and tested"/>
                                     <segment title="all uploads"/>
+                                    <segment title="liked recipes"/>
                                 </segments>
                                 <connections>
                                     <action selector="switchViews:" destination="9pC-Qh-6ly" eventType="valueChanged" id="ztT-nn-Jrb"/>
                                 </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIc-Ma-pyo">
+                                <rect key="frame" x="0.0" y="331" width="414" height="482"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="ofW-ss-emm" kind="embed" id="fLK-eN-24w"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.51372549020000002" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="qHt-NK-n6A"/>
@@ -424,6 +432,7 @@
                         <outlet property="blueView" destination="Y13-LS-eOD" id="jWl-ZL-n0o"/>
                         <outlet property="followButton" destination="QRh-hd-5Ev" id="ilF-P0-ZmD"/>
                         <outlet property="greenView" destination="azn-Hx-pB7" id="Zjr-px-y9D"/>
+                        <outlet property="likedRecipView" destination="gIc-Ma-pyo" id="Axg-T6-8Kx"/>
                         <outlet property="segmentControl" destination="V1S-XD-SJJ" id="Xv9-GX-pp5"/>
                     </connections>
                 </viewController>
@@ -572,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdg-7O-aYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="-1384"/>
+            <point key="canvasLocation" x="1675" y="-1511"/>
         </scene>
         <!--Reviews View Controller-->
         <scene sceneID="z0F-Ap-nS6">
@@ -1262,7 +1271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfX-Qn-XXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118.840579710145" y="-340.17857142857139"/>
+            <point key="canvasLocation" x="1819" y="-987"/>
         </scene>
         <!--Tried Sub View Controller-->
         <scene sceneID="2Dt-qM-dw6">
@@ -1317,7 +1326,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43v-R0-YxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115.9420289855075" y="-771.42857142857144"/>
+            <point key="canvasLocation" x="1819" y="-623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kJq-Vl-WUV">
+            <objects>
+                <viewController id="ofW-ss-emm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eg0-AD-d4S">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="482"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxy-jY-gvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="-230"/>
         </scene>
     </scenes>
     <resources>
